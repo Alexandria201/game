@@ -1,12 +1,3 @@
-const blocks = [
-    [0, 0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 0, 0],
-    [0, 0, 0, 0, 1, 0],
-    [1, 0, 0, 2, 0, 0],
-    [0, 0, 0, 1, 0, 0],
-    [0, 0, 0, 0, 0, 0]
-];
-
 function render(blockArray) {
     let markup = '';
     blockArray.forEach((row) => {
@@ -24,8 +15,4 @@ function render(blockArray) {
     document.getElementById('app').innerHTML = markup;
 };
 
-render(blocks);
-
-
-
-
+export default render;
