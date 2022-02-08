@@ -30,11 +30,4 @@ body {
     margin: 5px;
 }
 
-@media (min-width: 500px) and (max-width: 904px) {
-    body {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    } 
-}
 

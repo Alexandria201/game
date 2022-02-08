@@ -1,7 +1,7 @@
 function render(blockArray) {
     let markup = '';
     blockArray.forEach((row) => {
-        markup += '<div class = "row"></div>';
+        markup += '<div class = "row">;
         Array.from(row).forEach((item) => {
             if (item === 0) {
                 markup += '<div class = "item"></div>';
@@ -11,6 +11,7 @@ function render(blockArray) {
                 markup += '<div class = "men"></div>';
             }
         });
+        markup += '</div>';
     });
     document.getElementById('app').innerHTML = markup;
 };
